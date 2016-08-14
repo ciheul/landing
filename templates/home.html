@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<header id="MainHeader" class="chapter height100">
+    <div class="fullscreen-flexslider-ken-burns description-middle">
+        <ul class="slides" data-scale="1.2" data-transform-duration="30s" data-animation="kb" data-translate="0px">
+            <li>
+                <img src="{% static 'images/content/full-slider12.jpg' %}" alt="preview">
+
+                <div class="overlay"></div>
+                <div class="caption">
+                    <span class="middle">
+                        <span class="title">IT <span class="color-font">SYSTEM INTEGRATOR</span></span>
+                        <span class="title">AND <span class="color-font">CONSULTANT</span></span>
+                        {# <span class="title">YOUR <span class="color-font">IT SOLUTION</span> IS HERE.</span> #}
+                        <span class="title">How can we help <span class="color-font">you</span>?</span>
+                        <span class="tags"> Customer-oriented Mindset<i class="fa fa-circle"></i> Experienced Software Engineer<i class="fa fa-circle"></i> Fast Customer Support</span>
+                        <div class="container">
+                          <!--<a href="home/about" class="btn btn-white btn-scroll">Take The Tour</a>-->
+                            <a href="https://www.dropbox.com/s/abjps4d68uu6f8y/ciheul-portofolio-2015.pdf?dl=0" class="btn btn-color btn-scroll" target="_blank">Ciheul Engineering - Company Profile 2016</a>
+                        </div>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<footer class="type2 dark-gray-row">
+    <div class="container padding-small">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="h4 light"><strong>Agenda</strong></p>
+                <p class="h6">June 21, 2014</p>
+                <p>Giving a talk about <a href="http://www.python.or.id/2014/05/kopi-darat-python-indonesia-juni-2014.html">'django-tastypie for RESTful API'</a> at Indonesia Python community in Jakarta.</p><br>
+            </div>
+            <div class="col-md-4">
+                <p class="h4 light"><strong>Contact Us</strong></p>
+                <div class="world-map">
+                    <p>
+                        We are giving our best to satisfy our precious customers.
+                    </p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span>Jalan Batununggal Jelita II No. 22<br>
+                            Kompleks Batununggal Indah<br>
+                            Bandung, Indonesia 40266<br></span>
+                            <br>
+                            <span>Main Person Contact:</span><br>
+                            <span>Winnu Ayi Satria</span><br>
+                            <span><i class="fa fa-phone"></i> +62 811 55 1121<br></span>
+                            <span><i class="fa fa-envelope-o"></i> winnuayi@gmail.com<br></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 pull-right">
+                    <div class="social small pull-right">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/Ciheul">
+                                    <div class="circle-btn" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                        <p><i class="fa fa-facebook"></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/ciheul">
+                                    <div class="circle-btn" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                        <p><i class="fa fa-twitter"></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="#">
+                                    <div class="circle-btn" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                                        <p><i class="fa fa-linkedin-square"></i></p>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4"> <p class="copy">Ciheul Engineering</p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
