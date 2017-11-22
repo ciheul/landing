@@ -1,5 +1,7 @@
 {% extends 'eaglenest/base.html' %}
 
+{% load static %}
+
 {% block content %}
 <div class="container-fluid">
   <div class="row">
@@ -22,7 +24,43 @@
           <li class="breadcrumb-item active" aria-current="page">Yaw Dumper</li>
         </ol>
       </nav>
-      <div class="table-responsive">
+
+      <div class="row" style="margin-bottom: 50px">
+        <div class="col-md-2">    
+          <div class="card" style="width: 10rem; margin-bottom: 50px">
+            <div class="card-body">                
+              <p class="card-text">
+                <img src="{% static '/eaglenest/images/yaw-dumper.png' %}" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">    
+          <div class="card" style="width: 20rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="float-left"><strong>PN</strong></div>
+                <div class="float-right">10-60447-13</div>
+              </li>
+              <li class="list-group-item">
+                <div class="float-left"><strong>SN</strong></div>
+                <div class="float-right">431</div>
+              </li>
+              <li class="list-group-item">
+                <div class="float-left"><strong>LIFE TIME</strong></div>
+                <div class="float-right">5000</div>
+              </li>
+              <li class="list-group-item">
+                <div class="float-left"><strong>HAR YAD</strong></div>
+                <div class="float-right">OH</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">        
         <table class="table table-striped">
           <thead>
             <tr>
