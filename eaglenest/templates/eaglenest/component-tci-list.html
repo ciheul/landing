@@ -1,5 +1,7 @@
 {% extends 'eaglenest/base.html' %}
 
+{% load static %}
+
 {% block content %}
 <div class="container-fluid">
   <div class="row">
@@ -32,6 +34,7 @@
               <th>SN</th>
               <th>LIFE TIME</th>
               <th>HAR YAD</th>
+              <th>PICTURE</th>
               <th>STATUS</th>
               <th>ACTION</th>              
             </tr>
@@ -44,6 +47,7 @@
               <td style="text-align: right">431</td>
               <td style="text-align: right">5000</td>
               <td>OH</td>
+              <td><img src="{% static '/eaglenest/images/yaw-dumper.png' %}" /></td>
               <td><h5><span class="badge badge-danger">Check Up</span></h5></td>
               <td><a class="btn btn-sm btn-primary" role="button" href="/eaglenest/component/tci/1/">Detail</a></td>
             </tr>                    
