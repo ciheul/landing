@@ -73,8 +73,8 @@
       </nav>
     </header>
 
-    {% block content %}{% endblock %}    
-
+    {% block content %}{% endblock %}        
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -82,5 +82,7 @@
     <script>window.jQuery || document.write('<script src="{% static 'eaglenest/node_modules/jquery/dist/jquery.min.js' %}"><\/script>')</script>
     <script src="{% static 'eaglenest/node_modules/popper.js/dist/umd/popper.min.js' %}"></script>
     <script src="{% static 'eaglenest/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+    {% block javascript %}{% endblock %}
   </body>
 </html>

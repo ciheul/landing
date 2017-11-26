@@ -25,7 +25,7 @@
         </ol>
       </nav>
 
-      <div class="row" style="margin-bottom: 50px">
+      <div class="row" style="margin-bottom: 20px">
         <div class="col-md-2">    
           <div class="card" style="width: 10rem; margin-bottom: 50px">
             <div class="card-body">                
@@ -59,6 +59,13 @@
           </div>
         </div>
       </div>
+
+      <hr style="margin-bottom: 25px;">
+
+      <button id="tci-add-btn" type="submit" class="btn btn-primary" style="margin-bottom: 20px">Tambah</button>
+      <button id="tci-cancel-btn" type="submit" class="btn btn-default" style="margin-bottom: 20px">Batal</button>
+
+      <div id="tci-form-container" class="col-md-6"></div>
 
       <div class="table-responsive">        
         <table class="table table-striped">
@@ -107,4 +114,71 @@
     </main>
   </div>
 </div>
+
+<div style="margin-bottom: 40px"></div>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/template" id="tci-form-template">  
+  <div id="tci-form">
+    <form>      
+
+      <div class="form-group row">
+        <label for="example-text-input" class="col-5 col-form-label">Tail Number Pesawat</label>
+        <div class="col-7">
+          <input class="form-control" type="text" value="" id="example-text-input">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-text-input" class="col-5 col-form-label">Total Jam Terbang</label>
+        <div class="col-7">
+          <input class="form-control" type="text" value="" id="example-text-input">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-text-input" class="col-5 col-form-label">Total Cycle</label>
+        <div class="col-7">
+          <input class="form-control" type="text" value="" id="example-text-input">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="example-text-input" class="col-5 col-form-label">Total Landing</label>
+        <div class="col-7">
+          <input class="form-control" type="text" value="" id="example-text-input">
+        </div>
+      </div>
+
+      <div style="margin-bottom: 40px"></div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">        
+          <!-- <button type="submit" class="btn btn-default">Batal</button> -->
+          <button type="submit" class="btn btn-primary float-right">Tambah</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</script>
+
+<script type="text/javascript">
+  $('#tci-cancel-btn').hide();
+
+  $('#tci-add-btn').click(function() {
+    var template = $('#tci-form-template').html();  
+    $('#tci-form-container').append(template);
+
+    $('#tci-add-btn').hide();
+    $('#tci-cancel-btn').show();
+  });
+
+  $('#tci-cancel-btn').click(function() {
+    $('#tci-form-container').empty();
+    
+    $('#tci-cancel-btn').hide();
+    $('#tci-add-btn').show();
+  });
+</script>
 {% endblock %}
