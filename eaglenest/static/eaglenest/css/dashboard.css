@@ -1,3 +1,5 @@
+{% load static %}
+
 /*
  * Base structure
  */
@@ -57,6 +59,20 @@ h1 {
  * Dashboard
  */
 
+.planes-image {
+  /*display: flex;*/
+  background-image: url("/static/eaglenest/images/planes.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90%;
+  width: 100%;
+  opacity: 0.3;
+  top: 200;
+  left: 200;
+  position: absolute;
+}
+
 /* Placeholders */
 .placeholders {
   padding-bottom: 3rem;
@@ -66,3 +82,33 @@ h1 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+
+/**
+ * TCI Detail
+ */
+#tci-form-container {
+  padding: 0;
+}
+
+#tci-form {
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+
+/**
+ * Footer
+ */
+ footer {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.125);
+  font-size: 12px;
+  color: gray;
+  padding: 10px;
+  z-index: 999;
+ }

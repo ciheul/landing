@@ -28,5 +28,5 @@ urlpatterns = [
     # rapid prototyping
     url(r'^eaglenest/', include('eaglenest.urls')),
 
-    # url(r'', views.home, name='home'),
+    url(r'', views.home, name='home'),
 ]
