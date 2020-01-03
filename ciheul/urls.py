@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^contact/', views.contact, name='contact'),
 
     # rapid prototyping
-    url(r'^eaglenest/', include('eaglenest.urls')),
+    #url(r'^eaglenest/', include('eaglenest.urls')),
 
     url(r'', views.home, name='home'),
 ]

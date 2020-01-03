@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # rapid prototyping
-    'eaglenest',
+    #'eaglenest',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ciheul',
-        'USER': 'ciheul',
+        'USER': 'winnuayi',
         'PASS': '',
     }
 }
