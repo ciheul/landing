@@ -1,5 +1,6 @@
 *.pyc
 /eaglenest/migrations/
 /eaglenest/static/eaglenest/node_modules/
+/ciheul/config.py
 /static/admin/
 /static/eaglenest/

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
+import config
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -83,11 +84,17 @@ WSGI_APPLICATION = 'ciheul.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ciheul',
-        'USER': 'winnuayi',
-        'PASS': '',
-    }
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'landing',
+        'USER': config.USER,
+        'PASS': config.PASS,
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'ciheul',
+    #     'USER': 'winnuayi',
+    #     'PASS': '',
+    # },
 }
 
 
