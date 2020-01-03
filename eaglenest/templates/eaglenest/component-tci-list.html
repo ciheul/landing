@@ -1,0 +1,82 @@
+{% extends 'eaglenest/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">TCI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OC</a>
+        </li>            
+        </li>
+      </ul>          
+    </nav>
+
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+      <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb" style="background-color: white">
+          <li class="breadcrumb-item active" aria-current="page">TCI</li>          
+        </ol>
+      </nav>
+      
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>NO</th>
+              <th>KOMPONEN</th>
+              <th>PN</th>
+              <th>SN</th>
+              <th>LIFE TIME</th>
+              <th>HAR YAD</th>
+              <th>PICTURE</th>
+              <th>STATUS</th>
+              <th>ACTION</th>              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Yaw Damper</td>
+              <td>10-60447-13</td>  
+              <td>431</td>
+              <td style="text-align: right">5000</td>
+              <td>OH</td>
+              <td><img src="{% static '/eaglenest/images/yaw-dumper.png' %}" /></td>
+              <td><h5><span class="badge badge-danger">Check Up</span></h5></td>
+              <td><a class="btn btn-sm btn-primary" role="button" href="/eaglenest/component/tci/1/">Detail</a></td>
+            </tr>   
+            <tr>
+              <td>2</td>
+              <td>Auxiliary Power Unit</td>
+              <td>GTCP85-129</td>  
+              <td>P35527</td>
+              <td style="text-align: right">2500</td>
+              <td>OH</td>
+              <td><img src="{% static '/eaglenest/images/apu.jpeg' %}" width="90" /></td>
+              <td></td>
+              <td></td>
+            </tr>                                
+            <tr>
+              <td>3</td>
+              <td>Water Separator</td>
+              <td>321942-1-1</td>  
+              <td>7890</td>
+              <td style="text-align: right">8000</td>
+              <td>OH</td>
+              <td><img src="{% static '/eaglenest/images/water-separator.jpeg' %}" width="90" /></td>
+              <td></td>
+              <td></td>
+            </tr>                                
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+{% endblock %}

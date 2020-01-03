@@ -1,1 +1,5 @@
 *.pyc
+/eaglenest/migrations/
+/eaglenest/static/eaglenest/node_modules/
+/static/admin/
+/static/eaglenest/

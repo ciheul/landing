@@ -24,5 +24,9 @@ urlpatterns = [
     url(r'^about/', views.about, name='about'),
     url(r'^jobs/', views.jobs, name='jobs'),
     url(r'^contact/', views.contact, name='contact'),
+
+    # rapid prototyping
+    url(r'^eaglenest/', include('eaglenest.urls')),
+
     url(r'', views.home, name='home'),
 ]
