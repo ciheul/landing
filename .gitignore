@@ -1,4 +1,5 @@
 *.pyc
+db.sqlite3
 /eaglenest/migrations/
 /eaglenest/static/eaglenest/node_modules/
 /ciheul/config.py

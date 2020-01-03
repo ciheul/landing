@@ -84,11 +84,15 @@ WSGI_APPLICATION = 'ciheul.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'landing',
-        'USER': config.USER,
-        'PASS': config.PASS,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'landing',
+    #     'USER': config.USER,
+    #     'PASS': config.PASS,
+    # },
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     #     'NAME': 'ciheul',
